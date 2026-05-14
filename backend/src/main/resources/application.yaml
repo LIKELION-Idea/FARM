@@ -11,8 +11,9 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
+  profiles:
+    include: secret
 
 gemini:
   api:
-    key: AIzaSyB_uh7RpQCmnn06rzD637KtuGw9yEwIPsw
-    url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent
+    url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent
